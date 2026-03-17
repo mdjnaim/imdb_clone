@@ -3,6 +3,7 @@ import "./globals.css";
 import Header from "@/components/header";
 import Provider from "./provider";
 import Navbar from "@/components/navbar";
+import SearchBox from "@/components/searchbox";
 
 export const metadata: Metadata = {
   title: "IMDB Clone",
@@ -16,6 +17,7 @@ export default function RootLayout({ children,}: { children: React.ReactNode }) 
           <Provider>
         <Header />
         <Navbar />
+        <SearchBox />
         {children}
         </Provider>
       </body>
